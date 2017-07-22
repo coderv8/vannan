@@ -1,35 +1,29 @@
 import java.util.*;
-import java.util.Arrays;
 public class Digit
         {
 public static void main(String[] ar)
 {
-    int i,k,j,l=0,b,t,p,d;
+    int i,l=0,num,d;
     Scanner s=new Scanner(System.in);
-    System.out.print("enter the number   ");
-    b=s.nextInt();
-        System.out.print("enter the nof digits for deletion    ");
+    System.out.print("enter the number : ");
+    String inp=s.nextLine();
+    num=Integer.parseInt(inp);
+        System.out.print("enter the no of digits for deletion k : ");
     d=s.nextInt();
-    p=b;
-    while(b>0)
+    if(inp.length()>d)
     {
-        b=b/10;
-        l++;
-    }
-    if(l>d)
-    {
-      int[] a=new int[l];
-      for(i=0;i<l;i++)
+      int[] a=new int[inp.length()];
+      for(i=0;i<inp.length();i++)
       {
-          a[i]=p%10;
-          p=p/10;
+          a[i]=num%10;
+          num=num/10;
       }
       Arrays.sort(a);
-      System.out.print("Your number is    ");
-      for(i=0;i<l-d;i++)
+      System.out.print("Your number is ");
+      for(i=0;i<inp.length()-d;i++)
       System.out.print(a[i]);
     }
     else
-        System.out.print("inputs dosent match");
+        System.out.print("inputs dosen't match");
 }
 }
