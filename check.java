@@ -4,12 +4,11 @@ class check
 {
 	public static void main (String[] args)
 	{
-		int a;
 		Scanner s=new Scanner(System.in);
-		a=s.nextInt();
-		if(a==0)
+		int inp=s.nextInt();
+		if(inp==0)
 		System.out.print("zero");
-		else if(a<0)
+		else if(inp<0)
 		System.out.print("negative");
 		else
 		System.out.print("positve");
