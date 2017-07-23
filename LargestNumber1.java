@@ -44,7 +44,7 @@ public static void main(String[] ar)
     for(i=0;i<output.length();i++,coma++)
     {
     	System.out.print(output.charAt(i));
-    	if(position!=0&&position-1==i){
+    	if(position!=0&&position-1==i&&output.length()>=3){
     		System.out.print(",");
     		coma=-1;
     	}
