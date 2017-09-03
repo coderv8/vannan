@@ -5,6 +5,7 @@ public class SumOfPower
     {
        Scanner scan=new Scanner(System.in);
        System.out.print("Enter the value of n: ");
+       try{
        String in=scan.nextLine()+"0";
        int len=in.length();
        double sum=0;
@@ -14,5 +15,11 @@ public class SumOfPower
     	   sum+=pow;
        }
        System.out.println("output="+sum);
+       }
+       catch(NumberFormatException e)
+       {
+    	   System.out.println("Enter a positive integer");
+       }
     }
 }
+
