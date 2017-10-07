@@ -5,7 +5,7 @@ public class Pattern1 {
 		int input=sc.nextInt();
 		for(int i=1;i<=input;i++)
 		{
-			for(int j=0;j<=input;j++)
+			for(int j=1;j<=input;j++)
 			{
 				System.out.print("*");
 			}
